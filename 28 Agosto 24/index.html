@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg {width: 50%;}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            Header
+        </header>
+        <main>
+            Main
+        </main>
+        <aside>
+            Aside
+        </aside>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+    <script src="js/vivus.js"></script>
+    <script>
+        new Vivus('my-div', {duration: 50, type: 'scenario-sync', file:
+            'img/trazo-2.svg'},);
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+        ScrollReveal().reveal('.head', { delay: 200, distance: '150%', origin: 'top'});
+        ScrollReveal().reveal('.main', { delay: 500, scale: 0.85 });
+        ScrollReveal().reveal('.lado', { delay: 1000, rotate: { x: 20, z: 20 }});
+        ScrollReveal().reveal('.pie', { delay: 1200, distance: '150%', origin: 'bottom', });
+    </script>
+</body>
+</html>
